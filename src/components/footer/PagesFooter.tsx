@@ -41,6 +41,12 @@ const PagesFooter: React.FC = () => {
                             <h4 className="main-menu">Компанія</h4>
                             <ul>
                                 <li><a href="#">Хто ми?</a></li>
+                                <Modal 
+                                    isOpen={isModalOpen} 
+                                    onClose={closeModal} 
+                                    title="Про нас" 
+                                    content="Тут розміщено текст про вашу компанію чи організацію." 
+                                />
                                 <li><a href="#">Контакти</a></li>
                             </ul>
                             <h4 className="main-menu">Сервіси</h4>
@@ -65,6 +71,7 @@ const PagesFooter: React.FC = () => {
                         </div>
                     </div>
                     {isFormVisible && <FormWithCloseButton onClose={closeForm}/>}
+                  
                 </div>
             </div>
         );
