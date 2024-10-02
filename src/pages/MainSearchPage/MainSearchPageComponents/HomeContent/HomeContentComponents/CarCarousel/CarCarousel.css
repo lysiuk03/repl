@@ -1,0 +1,22 @@
+
+
+
+.arrow {
+    color: #2C4494;
+    top: 1556px;
+    margin: 10px;
+}
+
+
+
+.cars-container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.btn-none-styles{
+    background: none;
+    border:none;
+    padding: 0;
+}
