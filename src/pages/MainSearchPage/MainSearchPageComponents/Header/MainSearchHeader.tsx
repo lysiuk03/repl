@@ -6,20 +6,18 @@ import './MainSearchHeader.css';
 
 // Components
 import CarSearchForm from "./HeaderComponents/CarSearchForm";
-import Logo from "../../../../components/logo/Logo.tsx";
-import Navbar from "../../../../components/navbar/Navbar";
+import Navbar from '../../../../components/navbar/Navbar';
 
 
 const MainSearchHeader: React.FC = () => (
 
         <>
             <div className="header-container">
-                <Logo/>
+                <Navbar/>
                 <img src="/images/road.png" alt="Road" className="background-image"/>
                 <img src="/images/blue_car.png" alt="Car" className="car-image"/>
-                <Navbar/>
             </div>
-
+             
             <CarSearchForm/>
             <div className="auto-info-labels">
                 <section className="number-1">

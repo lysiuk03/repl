@@ -5,8 +5,6 @@ import './ProductPage.css';
 
 // Components
 import PagesFooter from "../../components/footer/PagesFooter";
-import Navbar from "../../components/navbar/Navbar";
-import Logo from "../../components/logo/Logo";
 import ProductInfo from "./ProductPageComponents/DescriptionInfo/ProductInfo.tsx";
 import ImageGallery from "./ProductPageComponents/ImageGallery/ImageGallery.tsx";
 import CompanyInfo from "./ProductPageComponents/CompanyInfo/CompanyInfo.tsx";
@@ -23,8 +21,7 @@ const ProductPage: React.FC = () => {
     return (
         <Layout className="base-layout">
             <Header className="base-header">
-                <Logo dark left />
-                <Navbar additionalClass="dark" />
+             
             </Header>
             <Content className="base-content product-container">
                 <p className="path">Головна/<span>каталог</span></p>
